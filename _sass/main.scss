@@ -83,7 +83,7 @@ START rules that will come AFTER Bulma's variables
     }
 
     .is-background-image {
-        background-image: url("../media/bg_poly-accent-blue.jpg");
+        background-image: url("../_media/bg_poly-accent-blue.jpg");
     }
 
 // Notification styles
@@ -96,8 +96,10 @@ START rules that will come AFTER Bulma's variables
         position: fixed;
         right: 1rem;
         top: 8rem;
-        background-color: $white;
         width: 15rem;
+        background-color: $white;
+        border-radius: 3px;
+        z-index: 1;
     }
 
 // Responsive styles
