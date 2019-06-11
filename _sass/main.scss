@@ -102,6 +102,12 @@ START rules that will come AFTER Bulma's variables
         z-index: 1;
     }
 
+    .navbar-burger {
+        background-color: $dark-blue;
+        border: 0;
+        padding: 0;
+    }
+
 // Responsive styles
     @include touch {
         .is-margin-touch {

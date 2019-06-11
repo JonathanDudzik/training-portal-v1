@@ -4880,6 +4880,11 @@ START rules that will come AFTER Bulma's variables
   border-radius: 3px;
   z-index: 1; }
 
+.navbar-burger {
+  background-color: #092940;
+  border: 0;
+  padding: 0; }
+
 @media screen and (max-width: 1023px) {
   .is-margin-touch {
     margin-top: 6rem; } }
