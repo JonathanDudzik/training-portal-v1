@@ -166,7 +166,15 @@ if (!Array.from) {
           // Toggle the "is-hidden-touch" class on "sideMenu" and is-active on "navbar-burger".
           el.classList.toggle('is-active');
           $target.classList.toggle('is-hidden-touch');
-  
+
+          // change aria-expanded to true
+          // const menuButton = document.querySelectorAll('.navbar-burger')
+          // const menuButtonExpanded = menuButton[0].attributes[3].value;
+          // if ($target.classList.contains('is-hidden-touch')) {
+          //   menuButtonExpanded.setAttribute('aria-expanded', 'false');
+          // } else {
+          //   menuButtonExpanded.setAttribute('aria-expanded', 'true');
+          // }
         });
       });
     }
@@ -182,7 +190,7 @@ const selectors = Array.from(document.querySelectorAll('[data-selector]'));
 // get all elements that are sections
 const sections = Array.from(document.querySelectorAll('[data-section]'));
 
-// give each selector an event listener, remove active class, and
+// give each selector an event listener, remove active class
 selectors.forEach(function(selector) {
     selector.addEventListener('click', toggleSections);
 });
@@ -208,6 +216,8 @@ function toggleSections(e) {
     // make current selector active class
     e.target.classList.add('is-active');
 
+    // move focus to the first paragraph of the unhidden section
+    section.focus();
 }
 
 /***************************************

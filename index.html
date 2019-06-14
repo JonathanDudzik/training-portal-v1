@@ -11,12 +11,18 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body class="has-navbar-fixed-top">
+        <noscript>
+            <div class="content is-large is-padding-2-top">
+                <h3 class="has-text-dark">It appears that Javascript is not enabled on your browser.</h3>
+                <p>This site uses scripts for the interactive quiz at the end and will not work without scripts.</p>
+            </div>
+        </noscript>
         <nav class="navbar is-fixed-top" role="top navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#" target="_blank">
-                    <img src="./_media/NCDHHS_DPH-395x100.png" width="276.5" height="70">
+                    <img src="./_media/NCDHHS_DPH-395x100.png" width="276.5" height="70" alt="DHHS logo and link to start page of this training">
                 </a>
-                <button class="navbar-burger has-text-white" data-target="sideMenu" aria-label="menu" aria-expanded="false">
+                <button class="navbar-burger has-text-white" data-target="sideMenu" role="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -24,13 +30,13 @@
             </div>
             <div class="navbar-menu is-active">
                 <div class="navbar-end is-flex">
-                    <a href="./_media/transcript-print.pdf" target="_blank" class="navbar-item is-flex is-size-4">
+                    <a href="./_media/transcript-print.pdf" target="_blank" aria-label="download PDF" class="navbar-item is-flex is-size-4">
                         <span class="icon has-text-white">
                             <i class="fas fa-print"></i>
                         </span>
                         <p class="has-text-white icon-padding">PRINT</p>
                     </a>
-                    <a href="./_media/transcript-audio.mp3" target="_blank" class="navbar-item is-flex is-size-4">
+                    <a href="./_media/transcript-audio.mp3" target="_blank" aria-label="download MP3" class="navbar-item is-flex is-size-4">
                         <span class="icon has-text-white">
                             <i class="fas fa-play-circle "></i>
                         </span> 
@@ -39,30 +45,30 @@
                 </div>
             </div>
         </nav>
-        <nav class="side-menu is-hidden-touch" id="sideMenu" aria-label="Training topics">
+        <nav class="side-menu is-hidden-touch is-shadow-touch" id="sideMenu" tabindex="0">
             <p class="menu-label">Contents</p>
-            <ul class="menu-list">
-                <li><a href="#" class="is-active" data-selector="welcome">Welcome</a></li>
-                <li><a href="#" data-selector="regulations">Regulations</a></li>
-                <li><a href="#" data-selector="requirements">Requirements</a></li>
-                <li><a href="#" data-selector="exemptions">Exemptions</a></li>
-                <li><a href="#"  data-selector="enrollment-form">NC CACFP IEA</a></li>
-                <li><a href="#" data-selector="best-practices">Best Practices</a></li>
-                <li><a href="#" data-selector="fraud-penalties">Penalties for Fraud</a></li>
-                <li><a href="#" data-selector="awarding-agency">Awarding Agency</a></li>
-                <li><a href="#" data-selector="non-discrimination">Non-Discrimination Statement</a></li>
-                <li><a href="#" data-selector="contact-info">Contact us</a></li>
-                <li><a href="#" data-selector="multi-choice-quiz">Quiz and Certificate</a></li>
+            <ul class="menu-list" role="menu">
+                <li><a href="#" data-selector="welcome" class="is-active"  tabindex="-1" role="menuitem">Welcome</a></li>
+                <li><a href="#" data-selector="regulations" tabindex="-1" role="menuitem">Regulations</a></li>
+                <li><a href="#" data-selector="requirements" tabindex="-1" role="menuitem">Requirements</a></li>
+                <li><a href="#" data-selector="exemptions" tabindex="-1" role="menuitem">Exemptions</a></li>
+                <li><a href="#" data-selector="enrollment-form" tabindex="-1" role="menuitem">NC CACFP IEA</a></li>
+                <li><a href="#" data-selector="best-practices" tabindex="-1" role="menuitem">Best Practices</a></li>
+                <li><a href="#" data-selector="fraud-penalties" tabindex="-1" role="menuitem">Penalties for Fraud</a></li>
+                <li><a href="#" data-selector="awarding-agency" tabindex="-1" role="menuitem">Awarding Agency</a></li>
+                <li><a href="#" data-selector="non-discrimination" tabindex="-1" role="menuitem">Non-Discrimination Statement</a></li>
+                <li><a href="#" data-selector="contact-info" tabindex="-1" role="menuitem">Contact us</a></li>
+                <li><a href="#" data-selector="multi-choice-quiz" tabindex="-1" role="menuitem">Quiz and Certificate</a></li>
             </ul>
             <p class="menu-label is-padding-2-top">Module Resources</p>
             <ul class="menu-list">
-                <li><a href="https://www.fns.usda.gov/part-226%E2%80%94child-and-adult-care-food-program" target="_blank">7 CFR PART 226</a></li>
-                <li><a href="https://www.nutritionnc.com/snp/pdf/cacfp/forms/fy2019/income/CACFP-11-ChildEnglishIncomeEligibilityApplication2018-2019.pdf" target="_blank">Income Eligibility Application</a></li>
-                <li><a href="https://www.nutritionnc.com/snp/index.htm/" target="_blank">NC CACFP Website</a></li>
+                <li><a href="https://www.fns.usda.gov/part-226%E2%80%94child-and-adult-care-food-program" target="_blank" tabindex="-1">7 CFR PART 226</a></li>
+                <li><a href="https://www.nutritionnc.com/snp/pdf/cacfp/forms/fy2019/income/CACFP-11-ChildEnglishIncomeEligibilityApplication2018-2019.pdf" target="_blank" tabindex="-1">Income Eligibility Application</a></li>
+                <li><a href="https://www.nutritionnc.com/snp/index.htm/" target="_blank" tabindex="-1">NC CACFP Website</a></li>
             </ul>
         </nav>
         <main class="min-height-full is-margin-touch is-margin-desktop">
-            <section class="section" data-section='welcome' id="welcome">
+            <section class="section has-invisible-outline" data-section='welcome' id="welcome" tabindex="-1">
                 <div class="notification is-background-image">
                     <h1 class="title is-size-4-mobile is-size-1 has-text-white">NC CACFP<br>Child Income Eligibility Application</h1>
                     <h2 class="subtitle has-text-white">Nutrition Training and Policy Team</h2>
@@ -80,7 +86,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='regulations' id="regulations">
+            <section class="section is-display-none has-invisible-outline" data-section='regulations' id="regulations" tabindex="-1">
                 <div class="columns">   
                     <div class="column">
                         <div class="content is-large">
@@ -93,7 +99,7 @@
                     </div>
                     <div class="column is-offset-1">
                         <aside>
-                            <img src="./_media/regulations-book.jpg" alt="regulations are laws">
+                            <img src="./_media/regulations-book.jpg" alt='book with "law" written on the cover'>
                         </aside>
                         <div class="content is-medium">
                             <aside class="notification">
@@ -103,7 +109,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='requirements' id="requirements">
+            <section class="section is-display-none has-invisible-outline" data-section='requirements' id="requirements" tabindex="-1">
                 <div class="content is-large">
                     <h3 class="has-text-dark">NC CACFP<br>Child Income Eligibility Application Requirements</h3>
                     <p>The NC CACFP has developed a single form that captures all required information for children participating in the CACFP. The Child Income Eligibility Application can be downloaded from the NC CACFP website and must meet the following requirements to be used to determine free or reduced meals:</p>
@@ -129,9 +135,6 @@
                                     <h4 class="has-text-white">If a family does not return an application or returns an incomplete application, children on that application will automatically be classified as denied or paid.</h4>
                                 </aside>
                             </div>
-                            <!-- <aside>
-                                <img src="./_media/checkboxes.jpg" alt="regulations are laws">
-                            </aside> -->
                             <div class="content is-medium">
                                 <aside class="notification">
                                     <h4 class="has-text-white">Your institution indicates on the Annual Information Certification for Institutions whether applications are valid one year from the date that the parent signs or the date your institution signs.</h4>
@@ -141,7 +144,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='exemptions' id="exemptions">
+            <section class="section is-display-none has-invisible-outline" data-section='exemptions' id="exemptions" tabindex="-1">
                 <div class="columns is-vcentered">
                     <div class="column is-7">
                         <div class="content is-large">
@@ -161,7 +164,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='enrollment-form' id="enrollment-form">
+            <section class="section is-display-none has-invisible-outline" data-section='enrollment-form' id="enrollment-form" tabindex="-1">
                 <div class="content is-large">
                     <h3 class="has-text-dark">Using Our Child Income Eligibility Application</h3>
                 </div>
@@ -169,7 +172,7 @@
                     <video src="./_media/screencast-form.mp4" alt="screencast of filling out enrollment form" controls></video>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='best-practices' id="best-practices">
+            <section class="section is-display-none has-invisible-outline" data-section='best-practices' id="best-practices" tabindex="-1">
                 <div class="columns is-vcentered">   
                     <div class="column is-8">
                         <div class="content is-large">
@@ -200,7 +203,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='fraud-penalties' id="fraud-penalties">
+            <section class="section is-display-none has-invisible-outline" data-section='fraud-penalties' id="fraud-penalties" tabindex="-1">
                 <div class="columns is-vcentered">   
                     <div class="column is-offset-1">
                         <div class="content is-large">
@@ -217,7 +220,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='awarding-agency' id="awarding-agency">
+            <section class="section is-display-none has-invisible-outline" data-section='awarding-agency' id="awarding-agency" tabindex="-1">
                 <div class="columns is-centered">   
                     <div class="column is-10">
                         <div class="content is-large">
@@ -232,7 +235,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='non-discrimination' id="non-discrimination">
+            <section class="section is-display-none has-invisible-outline" data-section='non-discrimination' id="non-discrimination" tabindex="-1">
                 <div class="columns">   
                     <div class="column">
                         <div class="content is-large">
@@ -267,7 +270,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='contact-info' id="contact-info">
+            <section class="section is-display-none has-invisible-outline" data-section='contact-info' id="contact-info" tabindex="-1">
                 <div class="columns is-vcentered">   
                     <div class="column is-offset-1">
                         <figure>
@@ -283,11 +286,11 @@
                     </div>
                 </div>
             </section>
-            <section class="section is-display-none" data-section='multi-choice-quiz' id="multi-choice-quiz">
+            <section class="section is-display-none has-invisible-outline" data-section='multi-choice-quiz' id="multi-choice-quiz" tabindex="-1">
                 <div class="columns">
                     <div class="column is-3 is-offset-1">
                         <figure>
-                            <img src="./_media/quiz-ready.jpg" alt="are you ready?">
+                            <img src="./_media/quiz-ready.jpg" alt='image of words "are you ready?"'>
                         </figure>
                     </div>
                     <div class="column is-7 is-offset-1">
@@ -335,7 +338,7 @@
                             <div class="modal" v-bind:class="{ 'is-active': showModalClass }">
                                 <div class="modal-background"></div>
                                 <div class="modal-content">
-                                    <div class="content notification is-large">
+                                    <div class="content notification is-large" role="alert" aria-live="rude">
                                         <h3 class="has-text-white">{{ quizModalHeading }}</h2>
                                         <p class="has-text-white">{{ quizModalBody }}</p>
                                     </div>

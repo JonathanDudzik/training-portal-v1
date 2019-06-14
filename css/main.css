@@ -4868,6 +4868,9 @@ START rules that will come AFTER Bulma's variables
 .is-background-image {
   background-image: url("../_media/bg_poly-accent-blue.jpg"); }
 
+.has-invisible-outline {
+  outline: none; }
+
 .notification {
   background-color: #397aac; }
 
@@ -4884,10 +4887,17 @@ START rules that will come AFTER Bulma's variables
   background-color: #092940;
   border: 0;
   padding: 0; }
+  .navbar-burger span {
+    height: 3px; }
+
+.modal-close:focus {
+  outline: 2px solid #397aac; }
 
 @media screen and (max-width: 1023px) {
   .is-margin-touch {
-    margin-top: 6rem; } }
+    margin-top: 6rem; }
+  .is-shadow-touch {
+    box-shadow: -3px 3px 10px -1px rgba(0, 0, 0, 0.75); } }
 
 @media screen and (min-width: 1024px) {
   .is-margin-desktop {
