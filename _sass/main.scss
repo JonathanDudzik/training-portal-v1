@@ -69,16 +69,9 @@ START rules that will come AFTER Bulma's variables
 .is-padding-2-top {
     padding-top: 2rem;
 }
-.is-padding-10-top {
-    padding-top: 10rem;
-}
 
 .min-height-full {
     min-height: 90vh;
-}
-
-.icon-padding {
-    padding-left: 0.5rem;
 }
 
 .is-background-image {
@@ -97,44 +90,13 @@ START rules that will come AFTER Bulma's variables
 
 // Side-menu styles
 .side-menu {
-    position: fixed;
-    right: 1rem;
-    top: 8rem;
-    width: 15rem;
-    background-color: $white;
+    padding-left: 1rem;
+    background-color: $light-grey;
     border-radius: 3px;
     z-index: 1;
 }
 
-.navbar-burger {
-    background-color: $dark-blue;
-    border: 0;
-    padding: 0;
-
-    span {
-        height: 3px;
-    }
-}
-
+// Modal styles
 .modal-close:focus {
     outline: 2px solid $light-blue;
 }
-
-// Responsive styles
-@include touch {
-    .is-margin-touch {
-        margin-top: 6rem;
-    }
-    
-    .is-shadow-touch {
-        box-shadow: -3px 3px 10px -1px rgba(0,0,0,0.75);
-    }
-}
-
-@include desktop {
-    .is-margin-desktop {
-        margin-right: 16rem;
-    }
-}
-    
-   

@@ -1,6 +1,6 @@
 # TODO
 * fix high severity vulnerability found with npm audit
-* Make side-menu completely accessible with aria expanded
+* Make side-menu completely accessible with aria expand button
 * quiz more readable by screen reader - use element.textCotent to create an on-page scoreboard for each question (use aria-live-region for screen readers)
 
 # Development notes
