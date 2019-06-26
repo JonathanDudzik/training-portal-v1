@@ -42,7 +42,6 @@ END rules that will come before Bulma's variables
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/content.sass";
-@import "../node_modules/bulma/sass/elements/form.sass";
 @import "../node_modules/bulma/sass/elements/icon.sass";
 @import "../node_modules/bulma/sass/elements/notification.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
@@ -56,6 +55,7 @@ END rules that will come before Bulma's variables
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
 
 /******************************************************************** 
 START rules that will come AFTER Bulma's variables 
