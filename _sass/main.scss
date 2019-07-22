@@ -62,7 +62,7 @@ START rules that will come AFTER Bulma's variables
 *********************************************************************/
 
 // My utility classes
-.is-display-none {
+.my-display-none {
     display: none
 }
 
@@ -74,8 +74,12 @@ START rules that will come AFTER Bulma's variables
     min-height: 90vh;
 }
 
+.max-height-half {
+    max-height: 70vh;
+}
+
 .is-background-image {
-    background-image: url("../_media/bg_poly-accent-blue.jpg");
+    background-image: url("../media/bg_poly-accent-blue.jpg");
 }
 
 // Screen reader function focuses on Sections but shouldn't show border
